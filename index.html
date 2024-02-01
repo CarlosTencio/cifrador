@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header>
+        <h1>(Des)CifraScript</h1>
+    </header>
+    <main>
+
+        <section id="section-left">
+            <textarea class="textarea" id="textarea-left" placeholder="Escriba el texto a encriptar"></textarea>
+            <div class="button-container">
+                <input type="button" class="button" id="cifrar" value="Cifrar" onclick="code()" />
+                <input type="button" class="button" id="descifrar" value="Descifrar" onclick="decode()" />
+            </div>
+        </section>
+
+        <section id="section-r">
+            <!--<img src="img/lupa.png" alt="lupa">-->
+            <textarea class="textarea" id="textarea-right"
+                placeholder="Aún no hay mensajes que encriptar o desencriptar" readonly></textarea>
+            <div class="button-container">
+                <input type="button" class="button" id="copy" value="Copiar" onclick="copy()" />
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Creado por Carlos Tencio.</p>
+            <a href="https://github.com/CarlosTencio">
+                <img src="img/git.png" alt="GitHub">
+            </a>
+            <a href="[enlace a tu perfil o repositorio de GitHub]">
+                <img src="img/linkedin.png" alt="linkedin">
+            </a>
+        </div>
+    </footer>
+    <script lang="javascript" type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
